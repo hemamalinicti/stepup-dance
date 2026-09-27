@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio & Performance Gallery - Step Up Dance Academy</title>
+  <meta name="description" content="Explore photos and video highlights of dance studio sessions, stage performances, workshops, and annual showcases at Step Up Dance Academy.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=14.0">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+        <span>Step Up <span class="gradient-text">Dance Academy</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="classes.html" class="nav-link">Dance Classes</a>
+        <a href="schedule.html" class="nav-link">Schedule</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm header-trial-btn" data-modal-target="trialModal" aria-label="Book Free Trial" title="Book Free Trial">
+          <i class="fas fa-calendar-check"></i><span class="btn-text"> Book Free Trial</span>
+        </button>
+        <button class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero inner-hero" style="background: linear-gradient(rgba(24, 21, 24, 0.65), rgba(24, 21, 24, 0.75)), url('assets/images/gallery-hero.jpg') center/cover no-repeat; padding-top: calc(var(--header-height) + 4rem); padding-bottom: 4rem;">
+    <div class="container text-center">
+      <span class="badge badge-purple" style="margin-bottom: 0.75rem; display: inline-block;">MOMENTS & MEMORIES</span>
+      <h1 class="hero-title" style="color: #FFF8F2; font-size: 2.75rem; margin-bottom: 1rem;">Studio & Stage <span style="color: #D6A85F;">Gallery</span></h1>
+      <p class="hero-subtitle" style="color: #EDE5E0; margin: 0 auto; max-width: 680px; font-size: 1.1rem; font-weight: 500;">
+        Catch a glimpse of the passion, practice, stage energy, and vibrant celebrations at Step Up Dance Academy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section" style="padding-top: 2rem;">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="filter-container">
+        <button class="filter-btn gallery-filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="performances">Stage Performances</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="studio">Studio Practices</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="workshops">Workshops & Jams</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="showcase">Annual Showcase</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- Item 1 -->
+        <div class="gallery-item" data-category="performances" data-title="Annual Stage Showcase 2025 - Hip-Hop Troupe">
+          <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=800&q=80" alt="Hip-Hop Troupe Performance">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Hip-Hop Stage Showcase</h4>
+            <span class="badge badge-purple" style="margin-top: 0.5rem;">Performances</span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="studio" data-title="Contemporary Floorwork Practice - Studio Alpha">
+          <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Contemporary Studio Practice">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Contemporary Floorwork</h4>
+            <span class="badge badge-pink" style="margin-top: 0.5rem;">Studio Practice</span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="workshops" data-title="International Hip-Hop Masterclass Workshop">
+          <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=800&q=80" alt="Masterclass Workshop">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Urban Masterclass Workshop</h4>
+            <span class="badge badge-gold" style="margin-top: 0.5rem;">Workshops</span>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="performances" data-title="Salsa Social Night & Stage Partner Routine">
+          <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=800&q=80" alt="Salsa Social Performance">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Salsa Social Night</h4>
+            <span class="badge badge-cyan" style="margin-top: 0.5rem;">Performances</span>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-category="showcase" data-title="Bharatanatyam Arangetram Recital Stage">
+          <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" alt="Classical Recital Stage">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Classical Fine Arts Recital</h4>
+            <span class="badge badge-gold" style="margin-top: 0.5rem;">Annual Showcase</span>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-category="studio" data-title="Junior Dancers Rhythm & Grooves Session">
+          <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&w=800&q=80" alt="Kids Studio Session">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Kids Studio Grooves</h4>
+            <span class="badge badge-purple" style="margin-top: 0.5rem;">Studio Practice</span>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item" data-category="performances" data-title="Bollywood Explosive Live Stage Production">
+          <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=800&q=80" alt="Bollywood Live Stage">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Bollywood Grand Finale</h4>
+            <span class="badge badge-gold" style="margin-top: 0.5rem;">Performances</span>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-item" data-category="workshops" data-title="Friday Night Cypher & Open Jam Session">
+          <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80" alt="Open Jam Cypher">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Friday Night Cypher Jam</h4>
+            <span class="badge badge-pink" style="margin-top: 0.5rem;">Workshops</span>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="gallery-item" data-category="performances" data-title="Lyrical Ballet Stage Solo - Spotlight Recital">
+          <img src="assets/images/gallery-ballerina-stage.jpg" alt="Lyrical Ballet Spotlight Performance">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Lyrical Ballet Spotlight</h4>
+            <span class="badge badge-purple" style="margin-top: 0.5rem;">Performances</span>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="gallery-item" data-category="studio" data-title="Classical Ballet Studio Technique & Leap Practice">
+          <img src="assets/images/gallery-ballet-studio.jpg" alt="Ballet Studio Leap Practice">
+          <div class="gallery-item-overlay">
+            <div class="gallery-zoom-icon"><i class="fas fa-search-plus"></i></div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Ballet Studio Technique</h4>
+            <span class="badge badge-pink" style="margin-top: 0.5rem;">Studio Practice</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+
+      <div class="lightbox-img-wrapper">
+        <img id="lightboxImg" src="" alt="Gallery Preview">
+      </div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Trial Booking Modal -->
+  <div class="modal" id="trialModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Free Trial Pass</span>
+        <h3 style="font-size: 1.75rem; color: #FFF8F2;">Book Your Free Trial</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Join the dance family today!</p>
+      </div>
+
+      <form data-validate>
+        <div class="form-group">
+          <label class="form-label" style="color: #FFF8F2;">Full Name *</label>
+          <input type="text" class="form-control" placeholder="e.g. Michael Brown" required>
+          <span class="form-error">Please enter your name.</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Phone Number *</label>
+            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+            <span class="form-error">Please enter a valid phone.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Email Address *</label>
+            <input type="email" class="form-control" placeholder="michael@example.com" required>
+            <span class="form-error">Please enter a valid email.</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" style="color: #FFF8F2;">Dance Style Interest *</label>
+          <select name="danceStyle" class="form-control" required>
+            <option value="">Select Dance Style</option>
+            <option value="Hip-Hop & Urban Choreo">Hip-Hop & Urban</option>
+            <option value="Contemporary & Lyrical">Contemporary & Lyrical</option>
+            <option value="Bollywood Fusion & Beats">Bollywood Fusion</option>
+            <option value="Salsa & Bachata Partnering">Salsa & Bachata</option>
+            <option value="Bharatanatyam Classical">Bharatanatyam Classical</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          <i class="fas fa-paper-plane"></i> Book Free Trial
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/15551234567?text=Hi%20Step%20Up%20Dance%20Academy,%20I'd%20like%20to%20know%20more%20about%20your%20events%20and%20performances!" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <span>Step Up <span class="gradient-text">Dance Academy</span></span>
+          </a>
+          <p>Igniting passion, creativity, and dance excellence for dancers of all ages and levels.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:info@stepupdance.com" class="social-icon" aria-label="Email Us" title="Email Us"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="classes.html">Dance Classes</a>
+            <a href="schedule.html">Class Schedule</a>
+            <a href="instructors.html">Our Faculty</a>
+            <a href="gallery.html">Studio Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Events</h4>
+          <div class="footer-links">
+            <div>Annual Stage Showcase</div>
+            <div>International Masterclasses</div>
+            <div>Friday Night Cyphers</div>
+            <div>Latin Social Nights</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact</h4>
+          <div class="footer-links">
+            <div><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i> 78, Ganapathy, Coimbatore</div>
+            <div><i class="fas fa-phone-alt" style="color: var(--secondary); margin-right: 8px;"></i> +91 98765 01234</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Step Up Dance Academy. All Rights Reserved. &bull; <a href="#privacyModal" data-modal-target="privacyModal">Privacy Policy</a> &bull; <a href="#termsModal" data-modal-target="termsModal">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Privacy Policy Modal -->
+  <div class="modal" id="privacyModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Legal & Policy</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-heading); color: #FFF8F2;">Privacy Policy</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Your privacy and data security are important to us.</p>
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6; color: #EDE5E0; display: flex; flex-direction: column; gap: 1rem; max-height: 60vh; overflow-y: auto; padding-right: 0.5rem;">
+        <p><strong>1. Information Collection:</strong> Step Up Dance Academy collects contact details (name, email, phone number) when you sign up for free trial classes, enroll in monthly programs, or submit contact enquiries.</p>
+        <p><strong>2. Usage of Information:</strong> Your information is used strictly to communicate class schedules, trial confirmations, performance showcases, and studio updates. We do not sell or rent user data to third parties.</p>
+        <p><strong>3. Media Consent:</strong> Photography and videography captured during studio recitals, workshops, and rehearsals may be featured on our official website and social media channels with student/parent consent.</p>
+        <p><strong>4. Data Protection:</strong> We employ administrative and technical security measures to protect your personal details against unauthorized access.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div class="modal" id="termsModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Academy Guidelines</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-heading); color: #FFF8F2;">Terms & Conditions</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Please review our studio policies and code of conduct.</p>
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6; color: #EDE5E0; display: flex; flex-direction: column; gap: 1rem; max-height: 60vh; overflow-y: auto; padding-right: 0.5rem;">
+        <p><strong>1. Registration & Tuition:</strong> All tuition fees are payable on a monthly or program basis prior to the 5th of each month. Trial sessions are limited to one free pass per prospective student.</p>
+        <p><strong>2. Studio Code of Conduct:</strong> Students are expected to arrive 10 minutes prior to batch start time in appropriate dancewear and clean dance shoes. Respectful behavior toward instructors and fellow dancers is required at all times.</p>
+        <p><strong>3. Attendance & Makeup Classes:</strong> Missed sessions due to personal absences can be made up within the same calendar month depending on batch availability and instructor approval.</p>
+        <p><strong>4. Liability & Health Declaration:</strong> Students participate in physical dance activities at their own risk. Step Up Dance Academy is not liable for personal injuries or lost belongings within studio premises.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

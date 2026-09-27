@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step Up Dance Academy - Premier Dance & Performing Arts Studio</title>
+  <meta name="description" content="Welcome to Step Up Dance Academy. Discover Hip-Hop, Contemporary, Ballet, Bollywood, Salsa, Bharatanatyam and Kids Dance classes taught by world-class trainers.">
+  
+  <!-- Google Fonts (Playfair Display Serif + Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=14.0">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <span>Step Up <span class="gradient-text">Dance Academy</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="classes.html" class="nav-link">Dance Classes</a>
+        <a href="schedule.html" class="nav-link">Schedule</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm header-trial-btn" data-modal-target="trialModal" aria-label="Book Free Trial" title="Book Free Trial">
+          <i class="fas fa-calendar-check"></i><span class="btn-text"> Book Free Trial</span>
+        </button>
+        <button class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Nude Sand / Soft Blush Background matching reference) -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-feather" style="color: var(--secondary)"></i>
+          <span>Welcome to Step Up Dance Academy</span>
+        </div>
+        <h1 class="hero-title">
+          Master the <span class="gradient-text">Art of Dance</span> & Express Your Soul
+        </h1>
+        <p class="hero-subtitle">
+          Discover a warm, inspiring studio dedicated to dancers of all ages. Explore Hip-Hop, Contemporary, Ballet, Salsa, Bollywood, and Classical traditions.
+        </p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" data-modal-target="trialModal">
+            Enroll Now <i class="fas fa-arrow-right"></i>
+          </button>
+          <a href="classes.html" class="btn btn-outline btn-lg">
+            Explore Courses
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-number">15+ <i class="fas fa-star" style="font-size: 1.2rem; color: var(--secondary); margin-left: 4px;"></i></div>
+            <div class="stat-label">Dance Styles</div>
+          </div>
+          <div>
+            <div class="stat-number">3,500+</div>
+            <div class="stat-label">Happy Dancers</div>
+          </div>
+          <div>
+            <div class="stat-number">12+</div>
+            <div class="stat-label">Expert Instructors</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=900&q=80" alt="Step Up Dance Studio Performance">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Highlights Section -->
+  <section class="section" style="background: #FFF8F2;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Why Choose Us</span>
+        <h2 class="section-title">Elevate Your Dance Journey</h2>
+        <p class="section-description">We combine passion, professional choreography, state-of-the-art facilities, and a supportive community to help you shine.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1: World-Class Trainers -->
+        <div class="feature-card">
+          <div class="feature-image-box">
+            <img src="assets/images/trainers.png" alt="World-Class Dance Trainers">
+            
+          </div>
+          <div class="feature-card-body">
+            <h3 class="feature-title">World-Class Trainers</h3>
+            <p class="feature-desc">Learn directly from celebrity choreographers and certified dance masters with decades of international experience.</p>
+          </div>
+        </div>
+
+        <!-- Card 2: State-of-the-Art Studios -->
+        <div class="feature-card">
+          <div class="feature-image-box">
+            <img src="assets/images/studio.png" alt="State-of-the-Art Dance Studio">
+            
+          </div>
+          <div class="feature-card-body">
+            <h3 class="feature-title">State-of-the-Art Studios</h3>
+            <p class="feature-desc">Spacious wooden sprung floors, high-definition sound systems, ambient LED lighting, and full-length acoustic mirrors.</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Flexible Batch Timings -->
+        <div class="feature-card">
+          <div class="feature-image-box">
+            <img src="assets/images/timings.png" alt="Flexible Batch Timings">
+            
+          </div>
+          <div class="feature-card-body">
+            <h3 class="feature-title">Flexible Batch Timings</h3>
+            <p class="feature-desc">Morning, evening, and weekend batches tailored for working professionals, students, and kids.</p>
+          </div>
+        </div>
+
+        <!-- Card 4: Stage & Video Showcases -->
+        <div class="feature-card">
+          <div class="feature-image-box">
+            <img src="assets/images/stage.png" alt="Stage & Video Showcases">
+            
+          </div>
+          <div class="feature-card-body">
+            <h3 class="feature-title">Stage & Video Showcases</h3>
+            <p class="feature-desc">Get featured in annual stage productions, music video shoots, competition troupes, and studio jams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Dance Classes -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header-top-action">
+        <div>
+          <span class="section-subtitle">Programs & Styles</span>
+          <h2 class="section-title">Explore Featured Classes</h2>
+          <p class="section-description">Choose from a wide variety of dance styles tailored for every age group and experience level.</p>
+        </div>
+        <div>
+          <a href="classes.html" class="btn btn-primary btn-lg">
+            View All Dance Courses <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="classes-grid">
+        <!-- Class 1 -->
+        <div class="class-card">
+          <a href="#" class="class-image-link" data-class-details="hip-hop" title="Click to view full class details & timings">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Hip Hop Urban Choreography">
+              <span class="badge badge-purple class-badge">Urban Street</span>
+            </div>
+          </a>
+          <div class="class-content">
+            <div class="class-meta">
+              <span><i class="far fa-clock"></i> 3 Months</span>
+              <span><i class="fas fa-signal"></i> All Levels</span>
+            </div>
+            <h3 class="class-title"><a href="#" data-class-details="hip-hop">Hip-Hop & Urban Choreo</a></h3>
+            <p class="class-desc">Master popping, locking, breaking, and modern commercial choreography with high-energy beats.</p>
+            <div class="class-footer">
+              <div class="class-price">₹2,500 <span>/ month</span></div>
+              <button class="btn btn-outline btn-sm" data-modal-target="trialModal" data-course-title="Hip-Hop & Urban Choreo">
+                Book Trial
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 2 -->
+        <div class="class-card">
+          <a href="#" class="class-image-link" data-class-details="contemporary" title="Click to view full class details & timings">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?auto=format&fit=crop&w=600&q=80" alt="Contemporary Ballet Flow">
+              <span class="badge badge-pink class-badge">Ballet & Modern</span>
+            </div>
+          </a>
+          <div class="class-content">
+            <div class="class-meta">
+              <span><i class="far fa-clock"></i> 3 Months</span>
+              <span><i class="fas fa-signal"></i> Intermediate</span>
+            </div>
+            <h3 class="class-title"><a href="#" data-class-details="contemporary">Contemporary & Ballet Flow</a></h3>
+            <p class="class-desc">Express emotions through fluid movements, posture, floorwork techniques, and grace.</p>
+            <div class="class-footer">
+              <div class="class-price">₹2,800 <span>/ month</span></div>
+              <button class="btn btn-outline btn-sm" data-modal-target="trialModal" data-course-title="Contemporary & Ballet Flow">
+                Book Trial
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 3 -->
+        <div class="class-card">
+          <a href="#" class="class-image-link" data-class-details="bollywood" title="Click to view full class details & timings">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?auto=format&fit=crop&w=600&q=80" alt="Bollywood High Energy">
+              <span class="badge badge-gold class-badge">Commercial</span>
+            </div>
+          </a>
+          <div class="class-content">
+            <div class="class-meta">
+              <span><i class="far fa-clock"></i> Ongoing</span>
+              <span><i class="fas fa-signal"></i> All Levels</span>
+            </div>
+            <h3 class="class-title"><a href="#" data-class-details="bollywood">Bollywood Fusion & Beats</a></h3>
+            <p class="class-desc">High-spirited, energetic routines blending cinematic Bollywood moves, Folk, Punjabi, and Pop trends.</p>
+            <div class="class-footer">
+              <div class="class-price">₹2,200 <span>/ month</span></div>
+              <button class="btn btn-outline btn-sm" data-modal-target="trialModal" data-course-title="Bollywood Fusion & Beats">
+                Book Trial
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 4 -->
+        <div class="class-card">
+          <a href="#" class="class-image-link" data-class-details="salsa" title="Click to view full class details & timings">
+            <div class="class-image">
+              <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=600&q=80" alt="Salsa & Bachata Partnering">
+              <span class="badge badge-cyan class-badge">Partner Dance</span>
+            </div>
+          </a>
+          <div class="class-content">
+            <div class="class-meta">
+              <span><i class="far fa-clock"></i> 2 Months</span>
+              <span><i class="fas fa-signal"></i> All Levels</span>
+            </div>
+            <h3 class="class-title"><a href="#" data-class-details="salsa">Salsa & Bachata Partnering</a></h3>
+            <p class="class-desc">Master partner connection, turn patterns, footwork timing (On-1 & On-2), and social dance etiquette.</p>
+            <div class="class-footer">
+              <div class="class-price">₹3,000 <span>/ month</span></div>
+              <button class="btn btn-outline btn-sm" data-modal-target="trialModal" data-course-title="Salsa & Bachata Partnering">
+                Book Trial
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Class Details Modal (Step 1: View Class Timing, Trainer & Overview) -->
+  <div class="modal" id="classDetailsModal">
+    <div class="modal-dialog modal-dialog-lg">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      
+      <div class="class-details-container">
+        <div class="class-details-banner">
+          <img id="detailImg" src="" alt="Course Cover Image">
+          <span id="detailBadge" class="badge badge-purple class-details-badge"></span>
+        </div>
+
+        <div class="class-details-header-content">
+          <h2 id="detailTitle" class="class-details-title">Course Title</h2>
+          <p id="detailDesc" class="class-details-desc">Course Description...</p>
+        </div>
+
+        <div class="class-details-info-grid">
+          <div class="detail-info-item">
+            <div class="detail-icon"><i class="fas fa-user-ninja"></i></div>
+            <div class="detail-text">
+              <span class="detail-label">Master Trainer</span>
+              <strong id="detailTrainer">Trainer Name</strong>
+            </div>
+          </div>
+
+          <div class="detail-info-item">
+            <div class="detail-icon"><i class="far fa-clock"></i></div>
+            <div class="detail-text">
+              <span class="detail-label">Batch Schedule & Timings</span>
+              <strong id="detailTiming">Mon, Wed, Fri @ 6:00 PM</strong>
+            </div>
+          </div>
+
+          <div class="detail-info-item">
+            <div class="detail-icon"><i class="fas fa-signal"></i></div>
+            <div class="detail-text">
+              <span class="detail-label">Skill Level & Duration</span>
+              <strong id="detailLevel">All Levels • 3 Months</strong>
+            </div>
+          </div>
+
+          <div class="detail-info-item">
+            <div class="detail-icon"><i class="fas fa-tag"></i></div>
+            <div class="detail-text">
+              <span class="detail-label">Tuition Fee</span>
+              <strong id="detailPrice" class="detail-price-text">₹2,500 / month</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="class-details-highlights">
+          <h4 class="highlights-heading"><i class="fas fa-check-circle" style="color: var(--secondary);"></i> What You'll Learn & Master</h4>
+          <ul id="detailHighlightsList" class="highlights-list">
+            <!-- Populated dynamically -->
+          </ul>
+        </div>
+
+        <div class="class-details-action">
+          <button id="proceedToBookBtn" class="btn btn-primary btn-lg" style="width: 100%;">
+            Book This Class Now <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Team Preview (EXACT RAACK DANCE ANIMATION) -->
+  <section class="section instructor-section" style="background: #F4E7E9;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Core Faculty</span>
+        <h2 class="section-title">Meet Our Core Team</h2>
+        <p class="section-description">Hover over our core team cards to reveal their specializations, credentials, bio, and social links!</p>
+      </div>
+
+      <div class="instructors-grid">
+        <!-- Raack Team Member 1 -->
+        <div class="raack-team-card">
+          <div class="raack-img-box">
+            <span class="raack-top-badge">Founder & Master Trainer</span>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Elena Rostova">
+            <div class="raack-card-overlay">
+              <h3 class="raack-trainer-title">Elena Rostova</h3>
+              <div class="raack-trainer-role">Head of Ballet & Contemporary</div>
+              <p class="raack-bio-text">12+ Years Experience. Royal Ballet Academy Alumna specializing in fluid floorwork, lyrical alignment, and stage performances.</p>
+              <div class="raack-social-row">
+                <a href="#" class="raack-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="raack-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="raack-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <button class="btn btn-primary btn-sm" style="width: 100%;" data-modal-target="trialModal" data-course-title="Contemporary & Ballet Flow">
+                Book Session with Elena
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Raack Team Member 2 -->
+        <div class="raack-team-card">
+          <div class="raack-img-box">
+            <span class="raack-top-badge">Senior Urban Director</span>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Alex Rivera">
+            <div class="raack-card-overlay">
+              <h3 class="raack-trainer-title">Alex Rivera</h3>
+              <div class="raack-trainer-role">Hip-Hop & Commercial Lead</div>
+              <p class="raack-bio-text">World Dance Championship winner. Expert in popping, locking, breaking, and commercial video choreography.</p>
+              <div class="raack-social-row">
+                <a href="#" class="raack-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="raack-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="raack-social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              </div>
+              <button class="btn btn-primary btn-sm" style="width: 100%;" data-modal-target="trialModal" data-course-title="Hip-Hop & Urban Choreo">
+                Book Session with Alex
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Raack Team Member 3 -->
+        <div class="raack-team-card">
+          <div class="raack-img-box">
+            <span class="raack-top-badge">Classical Arts Director</span>
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Priya Sundaram">
+            <div class="raack-card-overlay">
+              <h3 class="raack-trainer-title">Priya Sundaram</h3>
+              <div class="raack-trainer-role">Classical Fine Arts Master</div>
+              <p class="raack-bio-text">Kalakshetra certified master with 15+ years experience training Bharatanatyam, Kathak, and Indian fusion.</p>
+              <div class="raack-social-row">
+                <a href="#" class="raack-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="raack-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+              <button class="btn btn-primary btn-sm" style="width: 100%;" data-modal-target="trialModal" data-course-title="Bharatanatyam Classical">
+                Book Session with Priya
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Raack Team Member 4 -->
+        <div class="raack-team-card">
+          <div class="raack-img-box">
+            <span class="raack-top-badge">Commercial Director</span>
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Karan Malhotra">
+            <div class="raack-card-overlay">
+              <h3 class="raack-trainer-title">Karan Malhotra</h3>
+              <div class="raack-trainer-role">Bollywood & Stage Director</div>
+              <p class="raack-bio-text">8+ Years Experience. Choreography director for concerts & films, blending cinematic Bollywood and Bhangra energy.</p>
+              <div class="raack-social-row">
+                <a href="#" class="raack-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="raack-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+              <button class="btn btn-primary btn-sm" style="width: 100%;" data-modal-target="trialModal" data-course-title="Bollywood Fusion & Beats">
+                Book Session with Karan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Reviews (EXACT OBSESSION DANCE STUDIO SYNCED REVIEWS SLIDER) -->
+  <section class="section" style="background: #FFF8F2;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Real Student Feedback</span>
+        <h2 class="section-title">What Our Dancers & Parents Say</h2>
+        <p class="section-description">Click any student avatar below or watch the synced testimonials slider auto-play!</p>
+      </div>
+
+      <div class="obsession-reviews-container">
+        <!-- Top Avatar Navigation Ring Bar -->
+        <div class="obsession-avatar-nav">
+          <div class="obsession-avatar-item active" data-index="0">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Ashvini Kawade">
+          </div>
+          <div class="obsession-avatar-item" data-index="1">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Sahil Malhotra">
+          </div>
+          <div class="obsession-avatar-item" data-index="2">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Avishka Sharma">
+          </div>
+          <div class="obsession-avatar-item" data-index="3">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Yash Patel">
+          </div>
+          <div class="obsession-avatar-item" data-index="4">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Aman Vohra">
+          </div>
+        </div>
+
+        <!-- Synchronized Review Quote Card Box -->
+        <div class="obsession-review-box">
+          <button class="obsession-nav-btn obsession-nav-prev" aria-label="Previous Review"><i class="fas fa-chevron-left"></i></button>
+          <button class="obsession-nav-btn obsession-nav-next" aria-label="Next Review"><i class="fas fa-chevron-right"></i></button>
+
+          <i class="fas fa-quote-left obsession-quote-icon"></i>
+          <div class="obsession-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="obsession-text-content" id="obsessionReviewText">
+            "Step Up Dance Academy changed my life! Their classes and instructors are awesome... gave me the skills and confidence to become a great dancer. I’ve been at multiple dance studios, but this one has the nicest instructors and most vibrant environment."
+          </p>
+          <div class="obsession-user-info">
+            <h3 class="obsession-user-name" id="obsessionReviewName">Ashvini Kawade</h3>
+            <span class="obsession-user-role" id="obsessionReviewRole">Contemporary Student</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trial Booking Modal -->
+  <div class="modal" id="trialModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Free Trial Pass</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-heading); color: #FFF8F2;">Book Your Free Trial Class</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Fill out the form below to reserve your complimentary session!</p>
+      </div>
+
+      <form data-validate>
+        <div class="form-group">
+          <label class="form-label" style="color: #FFF8F2;">Full Name *</label>
+          <input type="text" class="form-control" placeholder="e.g. John Doe" required>
+          <span class="form-error">Please enter your name.</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Phone Number *</label>
+            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+            <span class="form-error">Please enter a valid phone number.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Email Address *</label>
+            <input type="email" class="form-control" placeholder="john@example.com" required>
+            <span class="form-error">Please enter a valid email.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Dance Style Interest *</label>
+            <select name="danceStyle" class="form-control" required>
+              <option value="">Select Dance Style</option>
+              <option value="Hip-Hop & Urban Choreo">Hip-Hop & Urban Choreo</option>
+              <option value="Contemporary & Ballet Flow">Contemporary & Ballet Flow</option>
+              <option value="Bollywood Fusion & Beats">Bollywood Fusion & Beats</option>
+              <option value="Salsa & Bachata Partnering">Salsa & Bachata</option>
+              <option value="Bharatanatyam Classical">Bharatanatyam Classical</option>
+              <option value="Kids Dance Grooves">Kids Dance Grooves</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Preferred Batch *</label>
+            <select class="form-control" required>
+              <option value="">Select Batch Time</option>
+              <option value="Morning">Morning Batch (07:00 AM - 09:00 AM)</option>
+              <option value="Evening">Evening Batch (05:00 PM - 08:30 PM)</option>
+              <option value="Weekend">Weekend Batch (Sat & Sun)</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          Confirm Trial Slot
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/15551234567?text=Hi%20Step%20Up%20Dance%20Academy,%20I'd%20like%20to%20enquire%20about%20classes!" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <span>Step Up <span class="gradient-text">Dance Academy</span></span>
+          </a>
+          <p>Igniting passion, creativity, and dance excellence for dancers of all ages and levels.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:info@stepupdance.com" class="social-icon" aria-label="Email Us" title="Email Us"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="classes.html">Dance Classes</a>
+            <a href="schedule.html">Class Schedule</a>
+            <a href="instructors.html">Our Faculty</a>
+            <a href="gallery.html">Studio Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Popular Styles</h4>
+          <div class="footer-links">
+            <a href="classes.html">Hip-Hop & Urban</a>
+            <a href="classes.html">Contemporary & Ballet</a>
+            <a href="classes.html">Bollywood Commercial</a>
+            <a href="classes.html">Salsa & Latin</a>
+            <a href="classes.html">Bharatanatyam</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact Information</h4>
+          <div class="footer-links" style="gap: 0.85rem;">
+            <div><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i> 78, Ganapathy, Coimbatore</div>
+            <div><i class="fas fa-phone-alt" style="color: var(--secondary); margin-right: 8px;"></i> +91 98765 01234</div>
+            <div><i class="fas fa-envelope" style="color: var(--accent-pink); margin-right: 8px;"></i> info@stepupdance.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Step Up Dance Academy. All Rights Reserved. &bull; <a href="#privacyModal" data-modal-target="privacyModal">Privacy Policy</a> &bull; <a href="#termsModal" data-modal-target="termsModal">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Privacy Policy Modal -->
+  <div class="modal" id="privacyModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Legal & Policy</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-heading); color: #FFF8F2;">Privacy Policy</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Your privacy and data security are important to us.</p>
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6; color: #EDE5E0; display: flex; flex-direction: column; gap: 1rem; max-height: 60vh; overflow-y: auto; padding-right: 0.5rem;">
+        <p><strong>1. Information Collection:</strong> Step Up Dance Academy collects contact details (name, email, phone number) when you sign up for free trial classes, enroll in monthly programs, or submit contact enquiries.</p>
+        <p><strong>2. Usage of Information:</strong> Your information is used strictly to communicate class schedules, trial confirmations, performance showcases, and studio updates. We do not sell or rent user data to third parties.</p>
+        <p><strong>3. Media Consent:</strong> Photography and videography captured during studio recitals, workshops, and rehearsals may be featured on our official website and social media channels with student/parent consent.</p>
+        <p><strong>4. Data Protection:</strong> We employ administrative and technical security measures to protect your personal details against unauthorized access.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div class="modal" id="termsModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Academy Guidelines</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-heading); color: #FFF8F2;">Terms & Conditions</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Please review our studio policies and code of conduct.</p>
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6; color: #EDE5E0; display: flex; flex-direction: column; gap: 1rem; max-height: 60vh; overflow-y: auto; padding-right: 0.5rem;">
+        <p><strong>1. Registration & Tuition:</strong> All tuition fees are payable on a monthly or program basis prior to the 5th of each month. Trial sessions are limited to one free pass per prospective student.</p>
+        <p><strong>2. Studio Code of Conduct:</strong> Students are expected to arrive 10 minutes prior to batch start time in appropriate dancewear and clean dance shoes. Respectful behavior toward instructors and fellow dancers is required at all times.</p>
+        <p><strong>3. Attendance & Makeup Classes:</strong> Missed sessions due to personal absences can be made up within the same calendar month depending on batch availability and instructor approval.</p>
+        <p><strong>4. Liability & Health Declaration:</strong> Students participate in physical dance activities at their own risk. Step Up Dance Academy is not liable for personal injuries or lost belongings within studio premises.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Schedule & Timetable - Step Up Dance Academy</title>
+  <meta name="description" content="View weekly dance class schedules, batch timings, and studio availability at Step Up Dance Academy. Filter by day, instructor, or style.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=14.0">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+        <span>Step Up <span class="gradient-text">Dance Academy</span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="classes.html" class="nav-link">Dance Classes</a>
+        <a href="schedule.html" class="nav-link active">Schedule</a>
+        <a href="instructors.html" class="nav-link">Instructors</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm header-trial-btn" data-modal-target="trialModal" aria-label="Book Free Trial" title="Book Free Trial">
+          <i class="fas fa-calendar-check"></i><span class="btn-text"> Book Free Trial</span>
+        </button>
+        <button class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section class="hero inner-hero" style="background: linear-gradient(rgba(24, 21, 24, 0.65), rgba(24, 21, 24, 0.75)), url('assets/images/schedule-hero.jpg') center/cover no-repeat;">
+    <div class="container text-center">
+      <span class="badge badge-purple" style="margin-bottom: 0.75rem; display: inline-block;">CLASS TIMETABLE</span>
+      <h1 class="hero-title" style="color: #FFF8F2; margin-bottom: 1rem;">Weekly Class <span style="color: #D6A85F;">Schedule</span></h1>
+      <p class="hero-subtitle" style="color: #EDE5E0; margin: 0 auto; max-width: 680px; font-weight: 500;">
+        Find the perfect batch for your routine. Filter classes by day of the week, dance style, instructor, or search directly below.
+      </p>
+    </div>
+  </section>
+
+  <!-- Schedule & Timetable Section -->
+  <section class="section" id="scheduleSection">
+    <div class="container">
+
+      <!-- Schedule Filter & Control Bar -->
+      <div class="schedule-controls">
+        <div class="schedule-search-box">
+          <i class="fas fa-search schedule-search-icon"></i>
+          <input type="text" id="scheduleSearch" placeholder="Search class name, instructor, or level...">
+        </div>
+
+        <div class="schedule-category-box">
+          <select id="categoryFilter" class="form-control" style="border-radius: var(--radius-full); padding-left: 1.25rem;">
+            <option value="all">All Dance Genres</option>
+            <option value="urban">Urban & Street</option>
+            <option value="contemporary">Contemporary</option>
+            <option value="classical">Classical Fine Arts</option>
+            <option value="social">Social & Partnering</option>
+            <option value="kids">Kids & Juniors</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Day Tabs Navigation -->
+      <div class="day-tab-list" style="margin-bottom: 2rem;">
+        <button class="day-tab active" data-day="all">All Days</button>
+        <button class="day-tab" data-day="monday">Monday</button>
+        <button class="day-tab" data-day="tuesday">Tuesday</button>
+        <button class="day-tab" data-day="wednesday">Wednesday</button>
+        <button class="day-tab" data-day="thursday">Thursday</button>
+        <button class="day-tab" data-day="friday">Friday</button>
+        <button class="day-tab" data-day="saturday">Saturday</button>
+        <button class="day-tab" data-day="sunday">Sunday</button>
+      </div>
+
+      <!-- Timetable Grid Container -->
+      <div class="timetable-grid" id="timetableGrid">
+        <!-- Rendered dynamically by assets/js/schedule.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trial Booking Modal -->
+  <div class="modal" id="trialModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Free Trial Pass</span>
+        <h3 style="font-size: 1.75rem; color: #FFF8F2;">Reserve Your Slot</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Fill in your details to confirm your trial session entry.</p>
+      </div>
+
+      <form data-validate>
+        <div class="form-group">
+          <label class="form-label" style="color: #FFF8F2;">Full Name *</label>
+          <input type="text" class="form-control" placeholder="e.g. Alex Johnson" required>
+          <span class="form-error">Please enter your name.</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Phone Number *</label>
+            <input type="tel" class="form-control" placeholder="+1 (555) 000-0000" required>
+            <span class="form-error">Please enter a valid phone.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="color: #FFF8F2;">Email Address *</label>
+            <input type="email" class="form-control" placeholder="alex@example.com" required>
+            <span class="form-error">Please enter a valid email.</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" style="color: #FFF8F2;">Selected Dance Style / Class *</label>
+          <select name="danceStyle" class="form-control" required>
+            <option value="">Select Dance Class</option>
+            <option value="Hip-Hop Beginners">Hip-Hop Beginners</option>
+            <option value="Bharatanatyam Foundation">Bharatanatyam Foundation</option>
+            <option value="Contemporary Masterclass">Contemporary Masterclass</option>
+            <option value="Bollywood Cardio & Beats">Bollywood Cardio & Beats</option>
+            <option value="Salsa & Bachata Partnering">Salsa & Bachata Partnering</option>
+            <option value="Kids Dance Grooves">Kids Dance Grooves</option>
+            <option value="Commercial Jazz & Heels">Commercial Jazz & Heels</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+          <i class="fas fa-check-circle"></i> Confirm Class Slot
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/15551234567?text=Hi%20Step%20Up%20Dance%20Academy,%20I'd%20like%20to%20check%20schedule%20availability!" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+            <span>Step Up <span class="gradient-text">Dance Academy</span></span>
+          </a>
+          <p>Igniting passion, creativity, and dance excellence for dancers of all ages and levels.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:info@stepupdance.com" class="social-icon" aria-label="Email Us" title="Email Us"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="classes.html">Dance Classes</a>
+            <a href="schedule.html">Class Schedule</a>
+            <a href="instructors.html">Our Faculty</a>
+            <a href="gallery.html">Studio Gallery</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Studio Timings</h4>
+          <div class="footer-links">
+            <div>Weekdays: 7:00 AM - 9:30 PM</div>
+            <div>Saturdays: 8:30 AM - 8:00 PM</div>
+            <div>Sundays: 8:00 AM - 7:00 PM</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Location</h4>
+          <div class="footer-links">
+            <div><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i> 78, Ganapathy, Coimbatore</div>
+            <div><i class="fas fa-phone-alt" style="color: var(--secondary); margin-right: 8px;"></i>  +91 98765 01234
+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Step Up Dance Academy. All Rights Reserved. &bull; <a href="#privacyModal" data-modal-target="privacyModal">Privacy Policy</a> &bull; <a href="#termsModal" data-modal-target="termsModal">Terms & Conditions</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Privacy Policy Modal -->
+  <div class="modal" id="privacyModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Legal & Policy</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-heading); color: #FFF8F2;">Privacy Policy</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Your privacy and data security are important to us.</p>
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6; color: #EDE5E0; display: flex; flex-direction: column; gap: 1rem; max-height: 60vh; overflow-y: auto; padding-right: 0.5rem;">
+        <p><strong>1. Information Collection:</strong> Step Up Dance Academy collects contact details (name, email, phone number) when you sign up for free trial classes, enroll in monthly programs, or submit contact enquiries.</p>
+        <p><strong>2. Usage of Information:</strong> Your information is used strictly to communicate class schedules, trial confirmations, performance showcases, and studio updates. We do not sell or rent user data to third parties.</p>
+        <p><strong>3. Media Consent:</strong> Photography and videography captured during studio recitals, workshops, and rehearsals may be featured on our official website and social media channels with student/parent consent.</p>
+        <p><strong>4. Data Protection:</strong> We employ administrative and technical security measures to protect your personal details against unauthorized access.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions Modal -->
+  <div class="modal" id="termsModal">
+    <div class="modal-dialog">
+      <button class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="badge badge-purple" style="margin-bottom: 0.5rem;">Academy Guidelines</span>
+        <h3 style="font-size: 1.75rem; font-family: var(--font-heading); color: #FFF8F2;">Terms & Conditions</h3>
+        <p class="text-muted" style="font-size: 0.9rem; color: #EDE5E0;">Please review our studio policies and code of conduct.</p>
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6; color: #EDE5E0; display: flex; flex-direction: column; gap: 1rem; max-height: 60vh; overflow-y: auto; padding-right: 0.5rem;">
+        <p><strong>1. Registration & Tuition:</strong> All tuition fees are payable on a monthly or program basis prior to the 5th of each month. Trial sessions are limited to one free pass per prospective student.</p>
+        <p><strong>2. Studio Code of Conduct:</strong> Students are expected to arrive 10 minutes prior to batch start time in appropriate dancewear and clean dance shoes. Respectful behavior toward instructors and fellow dancers is required at all times.</p>
+        <p><strong>3. Attendance & Makeup Classes:</strong> Missed sessions due to personal absences can be made up within the same calendar month depending on batch availability and instructor approval.</p>
+        <p><strong>4. Liability & Health Declaration:</strong> Students participate in physical dance activities at their own risk. Step Up Dance Academy is not liable for personal injuries or lost belongings within studio premises.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/schedule.js"></script>
+</body>
+</html>
