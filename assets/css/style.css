@@ -492,19 +492,31 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-/* Home Hero Section with Group Dancers Background Image */
+/* Home Hero Section with Generated Stage Group Dancers Background Image */
 .home-hero {
   color: #FFF8F2 !important;
+  text-align: center !important;
+  padding: 5rem 0 4rem 0 !important;
+}
+
+.home-hero .hero-content {
+  max-width: 860px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
 }
 
 .home-hero .hero-badge {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border: 1px solid rgba(214, 168, 95, 0.35) !important;
+  background: rgba(255, 255, 255, 0.14) !important;
+  border: 1px solid rgba(214, 168, 95, 0.4) !important;
   color: #FFF8F2 !important;
+  margin: 0 auto 1.25rem auto !important;
 }
 
 .home-hero .hero-title {
   color: #FFF8F2 !important;
+  font-size: clamp(2.4rem, 4.2vw, 3.8rem) !important;
+  margin-bottom: 1.15rem !important;
+  line-height: 1.15 !important;
 }
 
 .home-hero .hero-title .gradient-text {
@@ -515,18 +527,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-hero .hero-subtitle {
   color: #EDE5E0 !important;
+  margin: 0 auto 1.75rem auto !important;
+  font-size: 1.12rem !important;
+  max-width: 680px !important;
+  line-height: 1.65 !important;
+}
+
+.home-hero .hero-cta {
+  justify-content: center !important;
+  margin-bottom: 2.25rem !important;
+}
+
+.home-hero .hero-stats {
+  max-width: 650px !important;
+  margin: 0 auto !important;
+  border-top-color: rgba(214, 168, 95, 0.25) !important;
 }
 
 .home-hero .stat-number {
   color: #FFF8F2 !important;
+  justify-content: center !important;
 }
 
 .home-hero .stat-label {
   color: #EDE5E0 !important;
-}
-
-.home-hero .hero-stats {
-  border-top-color: rgba(214, 168, 95, 0.25) !important;
 }
 
 /* Ambient Decorative Glow Layers */
