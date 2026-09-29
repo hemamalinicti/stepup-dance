@@ -481,14 +481,59 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   HERO SECTION - 100% DESKTOP VIEWPORT FIT
+   HERO SECTION - LUXURY WARM CREAM & AMBIENT GRADIENT GLOW
    ========================================================================== */
 .hero {
   position: relative;
   overflow: hidden;
-  background: var(--hero-bg); /* Signature warm nude background from Seven Movements reference */
-  border-bottom: 1px solid rgba(40, 13, 2, 0.08);
+  background: radial-gradient(ellipse at 20% 25%, #FFF0F4 0%, #FFF8F2 45%, #FBF0E6 100%);
+  border-bottom: 1px solid rgba(214, 168, 95, 0.2);
   padding: 3.5rem 0;
+  z-index: 1;
+}
+
+/* Ambient Decorative Glow Layers */
+.hero-glow-gold {
+  position: absolute;
+  top: -12%;
+  left: -8%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(214, 168, 95, 0.28) 0%, rgba(255, 248, 242, 0) 70%);
+  filter: blur(65px);
+  pointer-events: none;
+  z-index: 0;
+  animation: pulseGlow 8s ease-in-out infinite alternate;
+}
+
+.hero-glow-rose {
+  position: absolute;
+  bottom: -15%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(201, 130, 149, 0.25) 0%, rgba(255, 248, 242, 0) 70%);
+  filter: blur(75px);
+  pointer-events: none;
+  z-index: 0;
+  animation: pulseGlow 10s ease-in-out infinite alternate-reverse;
+}
+
+.hero-glow-burgundy {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(122, 31, 61, 0.08) 0%, rgba(255, 248, 242, 0) 70%);
+  filter: blur(55px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(1) translateY(0); opacity: 0.8; }
+  100% { transform: scale(1.12) translateY(-15px); opacity: 1; }
 }
 
 @media (min-width: 1025px) {
@@ -501,6 +546,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-grid {
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.5rem;
