@@ -517,43 +517,26 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .home-hero {
-    padding: 3rem 0 2.25rem 0 !important;
+    padding: 4.5rem 0 3.5rem 0 !important;
     background-size: cover !important;
-    background-position: center !important;
-    background-image: linear-gradient(rgba(24, 21, 24, 0.85), rgba(24, 21, 24, 0.92)), url('assets/images/home-hero-bg.jpg') !important;
-  }
-
-  .home-mobile-stage-box {
-    display: block !important;
-    width: 100% !important;
-    margin: 1.25rem 0 1.75rem 0 !important;
-    border-radius: 14px !important;
-    overflow: hidden !important;
-    border: 2px solid rgba(214, 168, 95, 0.45) !important;
-    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5) !important;
-  }
-
-  .home-mobile-stage-box img {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    object-fit: contain !important;
+    background-position: center 25% !important;
+    background-image: linear-gradient(rgba(24, 21, 24, 0.62), rgba(24, 21, 24, 0.78)), url('assets/images/home-hero-bg.jpg') !important;
   }
 
   .home-hero .hero-title {
-    font-size: 1.85rem !important;
+    font-size: 2rem !important;
     line-height: 1.2 !important;
     margin-bottom: 0.75rem !important;
   }
 
   .home-hero .hero-subtitle {
-    font-size: 0.92rem !important;
-    line-height: 1.45 !important;
-    margin-bottom: 1.25rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1.5rem !important;
   }
 
   .home-hero .hero-cta {
-    margin-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
   }
 }
 
