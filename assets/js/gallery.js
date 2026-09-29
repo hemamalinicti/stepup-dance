@@ -41,6 +41,25 @@ function initGallery() {
     });
   });
 
+  let lightboxTimer = null;
+
+  function startLightboxAutoplay() {
+    stopLightboxAutoplay();
+    lightboxTimer = setInterval(() => {
+      if (lightbox?.classList.contains('active')) {
+        currentIndex = (currentIndex + 1) % currentItems.length;
+        showLightboxImage();
+      }
+    }, 2000);
+  }
+
+  function stopLightboxAutoplay() {
+    if (lightboxTimer) {
+      clearInterval(lightboxTimer);
+      lightboxTimer = null;
+    }
+  }
+
   // Lightbox Trigger
   galleryItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -53,6 +72,7 @@ function initGallery() {
       showLightboxImage();
       lightbox?.classList.add('active');
       document.body.style.overflow = 'hidden';
+      startLightboxAutoplay();
     });
   });
 
@@ -71,23 +91,27 @@ function initGallery() {
     e.stopPropagation();
     currentIndex = (currentIndex - 1 + currentItems.length) % currentItems.length;
     showLightboxImage();
+    startLightboxAutoplay();
   });
 
   nextBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
     currentIndex = (currentIndex + 1) % currentItems.length;
     showLightboxImage();
+    startLightboxAutoplay();
   });
 
   closeBtn?.addEventListener('click', () => {
     lightbox?.classList.remove('active');
     document.body.style.overflow = '';
+    stopLightboxAutoplay();
   });
 
   lightbox?.addEventListener('click', (e) => {
     if (e.target === lightbox) {
       lightbox.classList.remove('active');
       document.body.style.overflow = '';
+      stopLightboxAutoplay();
     }
   });
 }

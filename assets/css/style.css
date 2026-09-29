@@ -492,6 +492,43 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+/* Home Hero Section with Group Dancers Background Image */
+.home-hero {
+  color: #FFF8F2 !important;
+}
+
+.home-hero .hero-badge {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1px solid rgba(214, 168, 95, 0.35) !important;
+  color: #FFF8F2 !important;
+}
+
+.home-hero .hero-title {
+  color: #FFF8F2 !important;
+}
+
+.home-hero .hero-title .gradient-text {
+  color: #D6A85F !important;
+  background: none !important;
+  -webkit-text-fill-color: #D6A85F !important;
+}
+
+.home-hero .hero-subtitle {
+  color: #EDE5E0 !important;
+}
+
+.home-hero .stat-number {
+  color: #FFF8F2 !important;
+}
+
+.home-hero .stat-label {
+  color: #EDE5E0 !important;
+}
+
+.home-hero .hero-stats {
+  border-top-color: rgba(214, 168, 95, 0.25) !important;
+}
+
 /* Ambient Decorative Glow Layers */
 .hero-glow-gold {
   position: absolute;
@@ -543,6 +580,26 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 1.5rem 0;
   }
+}
+
+/* --- Minimized Compact Inner Hero Banner for Desktop & Mobile --- */
+.hero.inner-hero {
+  min-height: auto !important;
+  padding-top: calc(var(--header-height) + 1.75rem) !important;
+  padding-bottom: 1.75rem !important;
+  display: block !important;
+}
+
+.inner-hero .hero-title {
+  font-size: 2.1rem !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.35rem !important;
+}
+
+.inner-hero .hero-subtitle {
+  font-size: 0.98rem !important;
+  line-height: 1.45 !important;
+  max-width: 620px !important;
 }
 
 .hero-grid {
@@ -2454,21 +2511,21 @@ textarea.form-control {
     margin-top: 1rem !important;
   }
 
-  /* Inner Hero Banners (Sufficient padding-top so title/badge aren't hidden behind fixed navbar) */
-  .inner-hero {
-    padding-top: calc(var(--header-height) + 2.75rem) !important;
-    padding-bottom: 2rem !important;
+  /* Inner Hero Banners (Compact & Minimized for Mobile) */
+  .hero.inner-hero {
+    padding-top: calc(var(--header-height) + 1.25rem) !important;
+    padding-bottom: 1.25rem !important;
   }
 
   .inner-hero .hero-title {
-    font-size: 1.85rem !important;
+    font-size: 1.5rem !important;
     line-height: 1.25 !important;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
   }
 
   .inner-hero .hero-subtitle {
-    font-size: 0.88rem !important;
-    line-height: 1.45 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.35 !important;
   }
 
   /* Schedule & Filter Controls on Mobile */

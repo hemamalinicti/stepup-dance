@@ -142,14 +142,14 @@ function initObsessionReviewsSlider() {
     resetAutoplay();
   });
 
-  // Auto-play loop
+  // Auto-play loop (Every 2 seconds)
   function startAutoplay() {
     autoplayTimer = setInterval(() => {
       if (!isHovered) {
         const nextIndex = (currentIndex + 1) % reviewsData.length;
         setReview(nextIndex);
       }
-    }, 4500);
+    }, 2000);
   }
 
   function resetAutoplay() {
